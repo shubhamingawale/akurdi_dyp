@@ -1,5 +1,5 @@
 # akurdi_dyp
-#facebook
+# facebook
 import pandas as pd
 import numpy as np
 df = pd.read_csv(r"C:\Users\ingaw\OneDrive\Pictures\Documents\dataset_Facebook.csv", sep=";")
@@ -16,24 +16,24 @@ print(pivot_table)
 reshape_arr = np.array([1,2,3,4,5,6,7,8,9,10])
 reshape_arr.reshape(5,2)
 
-##graphs
+# graphs
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 print(df.info())
-# Visualizing the distribution of age using a histogram
+#Visualizing the distribution of age using a histogram
 plt.figure(figsize=(10, 6))
 sns.histplot(data=df, x='age', bins=20, kde=True, color='black')
 plt.title('Distribution of Age')
 plt.xlabel('Age')
 plt.ylabel('Frequency')
 plt.show()
- Visualizing the correlation between features using a heatmap
+#Visualizing the correlation between features using a heatmap
 plt.figure(figsize=(12, 8))
 sns.heatmap(df.corr(), annot=True, cmap='coolwarm', fmt=".2f")
 plt.title('Correlation Heatmap')
 plt.show()
-# Visualizing the relationship between age and cholesterol using a scatter plot
+#Visualizing the relationship between age and cholesterol using a scatter plot
 plt.figure(figsize=(10, 6))
 sns.scatterplot(data=df, x='age', y='chol', hue='target', palette='coolwarm')
 plt.title('Relationship between Age and Cholesterol')
@@ -84,7 +84,7 @@ plt.ylabel('y')
 plt.savefig('plotline.png')
 
 
-##heart opr
+# heart opr
 import pandas as pd
 df.isnull().sum()
 #data cleaning
@@ -116,7 +116,7 @@ plt.plot(x,model.predict(x),color='red',label='Linear Regression Model')
 plt.legend()
 
 
-##web scrap
+# web scrap
 import requests 
 import bs4
 vr1 = requests.get('https://www.snapdeal.com/product/portronics-toad-25-wireless-mouse/6917529703062864514')
@@ -130,4 +130,3 @@ F_price
 Detail = vr2.find('div',{'class':'detailssubbox'}).get_text()
 Detail
 
-model.intercept_
