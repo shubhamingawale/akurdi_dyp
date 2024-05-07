@@ -1,0 +1,111 @@
+
+
+<!-- ASG. 1 -->
+<!-- responsive login Page -->
+<!-- Login code: -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        
+        .container {
+            max-width: 400px; 
+            margin: 50px auto; 
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .container input[type="text"],
+        .container input[type="password"],
+        .container input[type="email"],
+        .container input[type="submit"],
+        .container input[type="date"],
+        .container label {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 30px; 
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+        
+        .container input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+			margin-bottom: 0px;
+        }
+        
+        .container input[type="submit"]:hover {
+            background-color: #45a049;
+			padding: 12px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .container {
+                margin: 20px auto;
+                padding: 10px;
+            }
+            .container input[type="text"],
+        .container input[type="password"],
+        .container input[type="email"],
+        .container input[type="submit"],
+        .container input[type="date"],
+        .container label{
+                padding: 8px;
+                margin-bottom: 10px;
+            }
+            .container h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Number">
+                <input type="date" placeholder="DOB">
+                <label for="gender">Gender</label>
+                <select class="gender">
+                    <option value="male">Male</option>
+                    <option value="female">FeMale</option>
+                    <option value="none">Prefer Not to Say</option>
+                </select>
+
+                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Confirm Password">
+            <input type="submit" value="Sign-in" placeholder="Register">
+        </form>
+    </div>
+</body>
+</html> 
+
+<!-- for registration : -->
+<!-- <input type="text" name="username" placeholder="Username" required> --> 
+<!-- just add this line in body-> container -> form -->
+
+
+
+

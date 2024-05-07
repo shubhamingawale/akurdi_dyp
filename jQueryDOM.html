@@ -1,0 +1,86 @@
+<!-- Updating DOM using JQuery -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Mobile</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <div data-role="page">
+        <div data-role="header" data-theme="b">
+            <h1 id="original">Shubham's Gallery</h1>
+        </div>
+
+        <div data-role="navbar" data-grid="c">
+            <ul>
+                <li><a href="jQueryDOM.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="product.html">PRODUCT</a></li>
+                <li><a href="login_res.html">LOGIN</a></li>
+            </ul>
+        </div>
+
+        <center>
+            <h3>Product</h3>
+        </center>
+        <div class="content">
+            <center>
+                <div class="rows">
+                    <div>
+                        <img src="IMG20230716085254.jpg" height="250px" width="250px">
+                        <img src="IMG20230716085254.jpg" height="250px" width="250px">
+                        <img src="IMG20230716085254.jpg" height="250px" width="250px">
+                    </div>
+                </div>
+                <br>
+                <div class="rows">
+                    <div>
+                        <img src="IMG20230716085254.jpg" height="250px" width="250px">
+                        <img src="IMG20230716085254.jpg" height="250px" width="250px">
+                        <img src="IMG20230716085254.jpg" height="250px" width="250px">
+                    </div>
+                </div>
+                <br>
+                <div class="rows">
+                    <div>
+                        <img src="IMG20230716085254.jpg" height="250px" width="250px">
+                        <img src="IMG20230716085254.jpg" height="250px" width="250px">
+                        <img src="IMG20230716085254.jpg" height="250px" width="250px">
+                    </div>
+                </div>
+                <br>
+            </center>
+        </div>
+
+        <div data-role="footer" data-theme="b">
+            <div class="quicklinks">
+                <h3>Quicklinks</h3>
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="product.html">PRODUCT</a>
+                <a href="login_res.html">LOGIN</a>
+            </div>
+        </div>
+        <button id="updateButton">Update Content</button>
+    </div>
+    <script>
+        $(document).ready(function(){
+            function updateContent() {
+                var newContent = "Shubham's Arts and Gallery";
+                $("#original").text(newContent);
+            }
+
+            $("#updateButton").click(function(){
+                updateContent();
+            });
+        });
+    </script>
+</body>
+
+</html>
